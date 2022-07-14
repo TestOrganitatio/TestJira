@@ -12,6 +12,7 @@ En la raiz ejecutar :
 
 Para windows:
 
+
 ```env\Scripts\activate```
 
 Para linux: 
