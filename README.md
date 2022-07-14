@@ -22,6 +22,3 @@ Para linux:
 
 pip install -r requirements.txt
 
-
-
-
