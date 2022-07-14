@@ -8,10 +8,9 @@ Ejecutar el comando ```python -m venv env``` en la carpeta raiz del proyecto
 
 # 3. Activacion del Entorno Virtual
 
-En la raiz ejecutar :
+Abrir terminal en la ruta del proyecto y ejecutar:
 
 Para windows:
-
 
 ```env\Scripts\activate```
 
@@ -21,5 +20,11 @@ Para linux:
 
 # 4. Instalacion de Librerias (Archivo requirements)
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
+
+# 5. Ejecutar el Proeycto
+
+```python manage.py runserver```
+
+# 6. FIN
 
