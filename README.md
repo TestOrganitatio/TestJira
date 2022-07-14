@@ -8,9 +8,9 @@ En la raiz ejecutar :
 
 Para windows:
 
-.\venv\Scripts\activate.bat
+```.\venv\Scripts\activate.bat```
 
 Para linux: 
 
-To do...
+```source env/bin/activate```
 
