@@ -27,16 +27,9 @@ SECRET_KEY = 'django-insecure-^2^!&p=^s9_w7i2+xfb9++hu2gfs^g^y=!98=c%%h(p2o=x0&#
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 CORS_ALLOW_ALL_ORIGINS = True
 
-"""
-CORS_ALLOWED_ORIGINS = [
-"https://example.com",
-"https://sub.example.com",
-"http://localhost:8080",
-"http://127.0.0.1:9000",
-]
-"""
 
 # Application definition
 
@@ -55,8 +48,9 @@ INSTALLED_APPS = [
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-    'ROTATE_REFRESH_TOKEN': True,
+    'ROTATE_REFRESH_TOKEN': False,
     'BLACKLIST_AFTER_ROTATION': True,
+    'UPDATE_LAST_LOGIN': False,
 
     'ALGORITHM': 'HS256',
     'USER_ID_FIELD': 'id',
@@ -78,11 +72,10 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
     ),
-    'DEFAULT_AUTHNTICATION_CLASSES': (
+    'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-
 AUTH_USER_MODEL = 'bank_be.User'
 
 ROOT_URLCONF = 'bank.urls'
